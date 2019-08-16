@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+### Web ################################################
+  web:
+    container_name: "Jun_Aria2"
+    image: "opengg/aria2"
+    ports:
+      - 6800:6800
+    volumes:
+      - ./config:/config
+      - ./downloads:/downloads
