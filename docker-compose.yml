@@ -3,12 +3,23 @@ version: '3'
 services:
 
 ### Web ################################################
-  web:
-    container_name: "Jun_Aria2"
-    image: "opengg/aria2"
+  nps-server:
+    container_name: "Jun_Nps"
+    image: "nps"
     ports:
-      - 6800:6800
+      - 80 
+      - 443 
+      - 6000 
+      - 8024 
+      - 8080
+      # - "11000-12000:11000-12000"
+      # - "65000-65535:65000-65535/dup"
     volumes:
+<<<<<<< HEAD
       - ./config:/config
       - ./downloads:/downloads
       # - "/Volumes/Extreme SSD:/downloads"
+=======
+      - ./data:/nps
+    tty: true
+>>>>>>> 2ab0a2ecfbb01b785185b40cd0e2381c484ade49
