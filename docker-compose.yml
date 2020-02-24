@@ -11,3 +11,4 @@ services:
     volumes:
       - ./config:/config
       - ./downloads:/downloads
+      # - "/Volumes/Extreme SSD:/downloads"
